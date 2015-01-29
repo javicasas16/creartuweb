@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+	<head>
+		<title>HostingsPower</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<style type="text/css">  
+		.rojo {  
+		color:red;  
+		}  
+
+		.margen-izq {  
+		margin-left:20px;  
+		}  
+		</style> 
+	</head>
+	<body>
+
+		<p class="rojo">Bienvenido a CrearWeb</p>
+		<form method="post" class="margen-izq" action="crearweb.php">
+			<p>Éste es el asistente de creación de administración de hosting</p>
+			Introduzca el nombre de la web que desea crear <input type="text" name="web"><br>
+			Seleccione el prefijo de su web 
+			<select name="suf">
+				<option value="com">.com</option>
+				<option value="es">.es</option>
+				<option value="org">.org</option>
+				<option value="net">.net</option>
+				<option value="tk">.tk</option>
+			</select><br>
+			¿Desea que se muestre el contenido del directorio raiz donde se almacena su web?
+			<select name="dir">
+				<option value="s">Sí</option>
+				<option value="n">No</option>
+			</select><br>
+			<input type="submit" value="Crear Web"/>
+		</form>
+	</body>	
+</html>
